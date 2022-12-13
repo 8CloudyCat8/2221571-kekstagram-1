@@ -10,7 +10,6 @@ let pic;
 
 const renderPhoto = (photo) => {
   const item = templatePictures.cloneNode(true);
-
   item.querySelector('.picture__img').src = photo.url;
   item.querySelector('.picture__likes').textContent = photo.likes;
   item.querySelector('.picture__comments').textContent = photo.comments.length;
